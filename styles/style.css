@@ -1,1 +1,57 @@
-/* место для вашего кода */
+/* Шаблон страницы */
+.main {}
+.header {}
+.cover {}
+.lots {}
+.about {}
+.footer {}
+
+/* Шапка */
+.header__menu {}
+.header__links-list {}
+.header__links-list-item {}
+.header__links-list-item_no-bullit {}
+.header__link {}
+.header__link_active {}
+.header__logo {}
+.header__logo-image {}
+.adress {}
+
+/* Ковер */
+.cover__title {}
+.cover__description {}
+.cover__description-text {}
+.bet-button {}
+
+/* Лоты */
+.lots__heading {}
+.lots__card-list {}
+.lots__card-list-item {}
+.card {}
+.card__title {}
+.card__text {}
+.card_type_film {}
+.card_type_book {}
+.card_type_picture {}
+.lots__look-more-link {}
+
+/* О нас */
+.about__column {}
+.about__logo {}
+.about__logo-image {}
+.about__title {}
+.about__text {}
+.about__text-under {}
+.about__text-container {}
+
+/* Подвал */
+.footer__adress {}
+.footer__menu {}
+.footer__menu-list {}
+.footer__menu-list-item {}
+.footer__menu-link {}
+.footer__menu-link_active {}
+.footer__social-list {}
+.footer__social-list-item {}
+.footer__social-link {}
+.footer__social-icon {}
