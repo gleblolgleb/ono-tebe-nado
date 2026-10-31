@@ -9,7 +9,7 @@
   align-items: center;
   width: 1100px;
   height: 293px;
-  padding: 92px 50px 96px 50px;
+  padding: 90px 50px 96px 50px;
 }
 
 .cover {
@@ -27,14 +27,6 @@
   margin: 185px 24px 0px 24px;
 }
 
-.about {
-  width: 1052px;
-  height: 595px;
-  margin: 120px 24px 0 24px;
-  display: grid;
-  grid-template-columns: 334px auto;
-}
-
 .footer {
   width: 1100px;
   height: 180px;
@@ -42,31 +34,21 @@
 }
 
 /* Шапка */
-.header_menu {
-  grid-column: 1;
-  width: 391px;
-  height: 22px;
-
-}
 
 .header__links-list {
   display: flex;
-  flex-wrap: wrap;
-  gap:34px;
+  gap:33px;
   list-style-type: circle;
-  width: 100%;
-  font-family: Raleway;
-  font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
 }
 
 .header__link {
-  text-decoration: underline;  
-  text-underline-offset: 4px;
+  text-decoration: underline;
+  text-underline-offset:2px;
 }
 .header__links-list-item_no-bullit {
-  list-style-type: none;
+  list-style: none;
+  border-bottom: none;
 }
 
 .header__link_active {
@@ -76,27 +58,21 @@
 .header__logo {
   grid-column: 2;
   display: block;
-  width: 148px;
-  height: 105px;
 }
 
 .header__logo-image {
-  width: 100%;
-  height: 100%;
+  width: 148px;
+  height: 105px;
   display: block;
 }
 
 .address {
-  grid-column: 3;
-  font-family: Raleway;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  text-underline-offset: 4px;
-  line-height: 24.3px;
+  display: block;
   justify-self: end;
-  width: 240px;
-  height: 98px;
+  font-size: 18px;
+  line-height: 24.3px;
+  padding: 0 37px;
+  text-underline-offset:2px;
 }
 
 /* Ковер */
@@ -126,15 +102,15 @@
   position: absolute;
   width: 286px;
   height: 115px;
-  margin-top: 165px;
+  margin-top: 164px;
 }
 
 .aligned-text_center {
   position: absolute;
   width: 339px;
   height: 115px;
-  margin-top: 300px;
-  margin-left: 330.5px;
+  margin-top: 298px;
+  margin-left: 331px;
 
 }
 
@@ -142,8 +118,8 @@
   position: absolute;
   width: 387px;
   height: 115px;
-  margin-top: 435px;
-  margin-left: 613px;
+  margin-top: 433px;
+  margin-left: 614px;
 
 }
 
@@ -192,7 +168,6 @@
 
 /* Лоты */
 .lots__heading {
-  font-family: Raleway;
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -245,6 +220,7 @@
   text-decoration-style: solid;
 
   text-decoration-thickness: 0%;
+  
 }
 
 .card__text {
@@ -286,7 +262,7 @@
 .lots__look-more-link {
   display: block;
   margin-left: 40px;
-  margin-top: 35px;
+  margin-top: 34px;
 
   font-family: Raleway;
   font-weight: 400;
@@ -301,13 +277,56 @@
 }
 
 /* О нас */
-.about__column {}
-.about__logo {}
-.about__logo-image {}
-.about__title {}
-.about__text {}
-.about__text-under {}
-.about__text-container {}
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px;
+  margin: 148px 24px 0 24px;
+}
+
+.about__column_logo{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about__logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px; 
+}
+
+.about__title {
+  text-transform: uppercase;
+  margin-bottom: 98px;
+  margin-top: 102px;
+  font-size: 40px;
+}
+
+.about__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__text1 {
+  width: 688px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.about__text2 {
+  height: 168px;
+  font-size: 20px;
+  line-height: 24px;
+}
 
 /* Подвал */
 .footer__adress {}
