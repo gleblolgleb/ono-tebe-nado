@@ -1,6 +1,4 @@
-.main {
-  height: 3028px;
-}
+
 
 /* Шаблон страницы */
 .header {
@@ -27,11 +25,6 @@
   margin: 185px 24px 0px 24px;
 }
 
-.footer {
-  width: 1100px;
-  height: 180px;
-  margin: 180px 0;
-}
 
 /* Шапка */
 
@@ -72,7 +65,7 @@
   font-size: 18px;
   line-height: 24.3px;
   padding: 0 37px;
-  text-underline-offset:2px;
+  text-underline-offset:3px;
 }
 
 /* Ковер */
@@ -329,13 +322,48 @@
 }
 
 /* Подвал */
-.footer__adress {}
-.footer__menu {}
-.footer__menu-list {}
-.footer__menu-list-item {}
-.footer__menu-link {}
-.footer__menu-link_active {}
-.footer__social-list {}
-.footer__social-list-item {}
-.footer__social-link {}
-.footer__social-icon {}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 182px;
+  padding: 0 24px 80px 24px;
+}
+
+.footer__address {
+  display: block;
+  justify-self: start;
+  font-size: 18px;
+  line-height: 24.3px;
+  padding: 0 27px;
+  font-style: normal;
+  text-underline-offset: 4px;
+}
+
+.footer__links-list {
+  text-align: center;
+  list-style: none;
+  justify-self: center;
+  font-size: 18px;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link {
+  text-decoration: underline;
+}
+
+.footer__menu-link_active{
+  text-decoration: none;  
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  padding: 0 27px;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
