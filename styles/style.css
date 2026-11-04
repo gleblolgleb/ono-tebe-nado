@@ -136,7 +136,7 @@
   color: white;
   text-transform: uppercase;
   text-align: justify;
-  text-align-last: justify;;
+  text-align-last: justify;
   width: 637px;
 }
 
@@ -275,7 +275,7 @@
   margin: 148px 24px 0 24px;
 }
 
-.about__column_logo{
+.about__column_logo {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -293,7 +293,7 @@
 
 .about__logo-image {
   width: 148px;
-  height: 114px; 
+  height: 114px;
 }
 
 .about__title {
@@ -351,7 +351,7 @@
 }
 
 .footer__menu-link_active {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .footer__social-list {
